@@ -31,7 +31,7 @@ users: Dict[str, User] = {}
 
 @app.get("/healthz", status_code=201)
 async def health():
-    return {"message": "User service is up!"}
+    return {"message": "Hello from User Service!"}
 
 
 @app.post("/users", response_model=UserResponse)
